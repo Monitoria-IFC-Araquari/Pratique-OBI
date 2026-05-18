@@ -1,0 +1,6 @@
+letra = input().strip()
+texto = input().strip()
+palavras = texto.split()
+total = len(palavras)
+contem = sum(1 for p in palavras if letra in p)
+print(f'{contem / total * 100:.1f}')
